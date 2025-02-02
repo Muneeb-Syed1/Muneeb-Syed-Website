@@ -2,29 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="Muneeb Syed's personal website">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <title>Muneeb Syed</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello! My name is <strong>Muneeb Syed</strong> and thank you for visiting my portfolio site.</h1>
-    <hr>
-    <p>I am a second-year Computer Engineering student at the University of California, Santa Cruz, working towards my bachelor's degree. I am skilled in Python, C, basic circuit theories, physics, and mathematics. My true passion lies in designing innovative hardware systems integrated with AI, pushing the boundaries of technology to create solutions once thought impossible.</p>
-    <p>At UCSC, I am actively involved in campus life as the Vice President of the Pakistani Student Association and the Muslim Tech Collaborative, as well as an Event Coordinator for the Muslim Student Association. In my free time, I enjoy working on side projects, exploring the outdoors, staying active through workouts, playing video games, and spending quality time with the communities I’ve built.</p>
-    <p>Feel free to check out my resume and explore my projects. Let’s connect and share ideas!</p>
-    <hr>
-    <img src="IMG_2385.jpg" height="300" alt="Picture of Muneeb Syed" title="This is me at Waterwall Park in Houston Texas!">
-    <p> </p>
-    <a href="https://www.linkedin.com/in/muneeb-syed-143514232" target="_blank" title="Don't Forget to Click Connect :D">
-        Check out my LinkedIn
-    </a>
-      |  
-    <a href="resume.html" target="_blank">
-        Resume
-    </a>
-      |  
-    <a href="mailto:muneebsyed987@gmail.com" target="_blank">
-        Contact me
-    </a>
+
+    <!-- Nav Bar-->
+    <div id="navbar"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+
+    <!-- Main Content-->
+    <div class="container">
+        <h1>Hi, I'm <strong>Muneeb Syed</strong>!</h1>
+        <hr>
+
+        <p>I’m a second-year Computer Engineering student at UCSC, also minoring in Computer Science. My passion lies in AI-integrated hardware systems, leveraging my skills in Python, C, circuit design, mathematics, and physics to build exciting projects.</p>
+
+        <p>Beyond academics, I take on leadership roles as the Vice President of the Pakistani Student Association and the Muslim Tech Collaborative, as well as Event Coordinator for the Muslim Student Association.</p>
+    
+        <p>In my free time, I love building engineering projects and custom PCs, weightlifting, MMA, and late-night drives. As an extrovert, I thrive in social events, traveling, and debating random topics—always up for a great discussion. Whether it’s cooking, ceramics, or exploring new cities, I’m always seeking new experiences. On rainy nights, you’ll find me watching NFL, NBA, UFC, gaming, or keeping up with cars, sneakers, and tech. I’m also passionate about public speaking and thought-provoking conversations that challenge perspectives.</p>
+
+        <p>Let’s connect! Check out my resume, projects, or reach out—I’m always open to learning and collaboration.</p>
+        <hr>
+
+        <!--Profile image-->
+        <div class="profile">
+            <img src="IMG_2385.jpg" height="300" alt="Picture of Muneeb Syed" title="This is me at Waterwall Park in Houston Texas!">
+            <p>This is me at Waterwall Park in Houston, Texas!</p>
+        </div>
+
+        <!--Socail & Contacts-->
+        <!-- Not needed with NAV tab
+        <div class="links">
+            <a href="https://www.linkedin.com/in/muneeb-syed-143514232" target="_blank" class="btn">LinkedIn</a>
+            <a href="resume.html" target="_blank" class="btn">Resume</a>
+            <a href="mailto:muneebsyed987@gmail.com" target="_blank" class="btn">Contact Me</a>
+        </div> -->
+    </div>
 </body>
 </html>

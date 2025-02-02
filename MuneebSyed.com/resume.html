@@ -4,11 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Muneeb Syed</title>
-</head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
 <body>
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
 
-    <h>This is my resume:</h>
-    <iframe style="border:0" src="Resume_Muneeb_Syed.pdf" width="750" height="750"></iframe>
+    <div class="resume-container">
+        <!-- Left Column (Sidebar) -->
+        <aside class="sidebar">
+            <img src="IMG_2385.jpg" alt="Muneeb Syed" class="profile-pic">
+            <h2>Muneeb Syed</h2>
+            <p>Computer Engineering Student</p>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> muneebsyed987@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (925)-786-2577</p>
+                <p><i class="fas fa-map-marker-alt"></i> Danville, CA</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/muneeb-syed-143514232" target="_blank">LinkedIn</a></p>
+            </div>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Python, C, C++</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Embedded Systems</li>
+                <li>Digital Logic</li>
+                <li>HTML & CSS</li>
+            </ul>
+
+            <h3>Education</h3>
+            <p><strong>University of California, Santa Cruz</strong></p>
+            <p>B.S. Computer Engineering, Class of 2027</p>
+            <p>Minor in Computer Science</p>
+        </aside>
+
+        <!-- Right Column (Main Content) -->
+        <main class="content">
+            <h2>About Me</h2>
+            <p>I am a Computer Engineering student at UCSC with a passion for AI-integrated hardware systems. My goal is to build innovative solutions that push the limits of technology.</p>
+            
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Head Engineering Counselor</h3>
+                <p><strong>Engineering for Kids, Fremont, CA</strong> | Apr. 2024 - Present</p>
+                <ul>
+                    <li>Taught engineering concepts to over 200 students from 3rd to 8th grade.</li>
+                    <li>Recognized as “Star of the Week” 4 times for leadership and teaching excellence.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>Software Developer Intern</h3>
+                <p><strong>Green Canvas, Remote</strong> | Jun. 2021 - Sep. 2023</p>
+                <ul>
+                    <li>Developed automated trading systems for NYSE and NASDAQ markets.</li>
+                    <li>Designed algorithms to predict stock price movements.</li>
+                </ul>
+            </div>
+            
+            <h2>Projects</h2>
+            <ul>
+                <li>Developed a Wordle game using Python.</li>
+                <li>Created a scheduler app to automate task management.</li>
+            </ul>
+
+            <h2>Download Resume</h2>
+            <a href="Resume_Muneeb_Syed.pdf" download class="download-btn">Download PDF</a>
+        </main>
+    </div>
 </body>
 </html>

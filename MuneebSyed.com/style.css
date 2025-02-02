@@ -1,6 +1,329 @@
+/* THIS IS THE HOME PAGE CODE vvvvv */
 body{
-    background-color: rosybrown;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Center the content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Improve header styles */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Add spacing to paragraphs */
+p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Profile section w/ image & text */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* circular so more like a pfp (can change for diff look) */
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Style the horizontal line */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #2c3e50;
+    margin: 20px auto;
+    width: 50%;
+}
+
+/* Style for links */
+/* with the NAV bar this isnt really needed but can be recycled code
+.links {
+    margin-top: 20px
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10xp;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+    */
+
+/* Make it mobile-friendly */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+
+
+/* THIS IS THE RESUME PAGE CODE vvvvv */
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar (Left Column) */
+.sidebar {
+    width: 30%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Main Content (Right Column) */
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.job h3 {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.job p {
+    font-size: 14px;
+    color: #666;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #34495e;
+}
+
+
+/* THIS IS THE COMING SOON PAGE CODE vvvvv */
+/* Coming Soon Card Styling */
+.coming-soon-card {
+    text-align: center;
+    padding: 50px;
+}
+
+.card {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Fade-in and out animation for text */
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-text {
+    animation: fadeInOut 2s infinite;
+}
+
+
+/* THIS IS THE CONTACTS CODE vvvvv */
+/* Contact Page Styles */
+/* Contact Page Styles */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #2c3e50;
+    margin-right: 8px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #1a252f;
+}
+
+
+
+
+/* THIS IS THE MEDIA ADJUST CODE, KEEP AS LAST LINE OF CODE!!!! vvvvv */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
 }
